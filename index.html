@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <img src="images/beautiful-architecture-and-building-of-tokyo-cityscape.jpg" alt="">
+    <div class="description">
+        <h2>Nome da musica </h2>
+        <i>alisson</i>
+    </div>
+    <div class="duracao">
+        <div class="barra">
+            <progress value="0" max="1"></progress>
+            <div class="ponto"></div>
+        </div>
+        
+        <div class="tempo">
+            <p class='inicio'>0:00</p>
+            <p class='fim'>3:50</p>
+        </div>
+
+    </div>
+    <!--Player-->
+    <div class="player">
+        <i class="fa-solid fa-backward setas anterior"></i>
+        <i class="fa-solid fa-circle-play botao-play"></i>
+        <i class="fa-solid fa-circle-pause botao-pause"></i>
+        <i class="fa-solid fa-forward setas proxima"></i>
+    <div class="volumeButton">
+        <i class="fa-solid fa-volume-low audio"></i>
+        <i class="fa-solid fa-volume-xmark muted"></i>
+        <i class="fa-solid fa-volume-high highAudio"></i>
+    </div>
+    <!--Controle do Audio-->   
+
+    <div class="volume-control">
+         <div class="volume-painel">
+            <div class="input-div">
+             <div class="volume-input-div">
+                <input type="range" value="100" step="5">
+                <div class="volume-progress"></div>
+            </div>
+         </div>
+    </div>
+    
+    
+        </div>
+    </div>
+        
+    <audio src="songs/living-life-in-the-night.mp3"></audio>
+
+
+</body>
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/24119af04d.js" crossorigin="anonymous"></script>
+</html>
