@@ -27,9 +27,9 @@ renderMusica(indexMusica)
 let volumeButton=document.querySelector('.volumeButton');
 let volumecontrol=document.querySelector('.volume-control');
 let volumepainel=document.querySelector('.volume-painel');
-    //pega o input dentro do volumepainel
+    
 let volumeRange=volumepainel.querySelector('input');
-    //pega o volume-progress dentro da div painel 
+    
 let volumeProgress=volumepainel.querySelector('.volume-progress');
 
 let duracaoMusica = document.querySelector('.fim');
@@ -66,10 +66,10 @@ document.querySelector('.proxima').addEventListener('click',() =>{
     renderMusica(indexMusica);
 })
 
-                    //verefica se a musica esta tocando
+                    
 musica.addEventListener('timeupdate',progressBarra);
 
-//autoplay           ended verefica se a musica terminou
+
 musica.addEventListener('ended',function(){
     console.log('sera?')
     indexMusica ++;
@@ -82,9 +82,9 @@ musica.addEventListener('ended',function(){
 
 
 
-//FUNCOES
+//FUNCTIONS
 
-//carrega as informacoes das musicas 
+ 
 function renderMusica(index){
     musica.setAttribute('src',musicas[index].src);
     musica.addEventListener('loadeddata',()=>{
@@ -111,18 +111,18 @@ function pausarMusica(){
 function progressBarra(){
     let barra = document.querySelector('progress');
 
-    //tempo atual dividido pela duracao ,multiplicado por 100 para mexer a barra do progresso
+    
     barra.style.width = Math.floor((musica.currentTime / musica.duration) *100) + '%';
-                //math.floor deixa numeros arredondados
+               
 
     let tempoDecorrido = document.querySelector('.inicio');
     tempoDecorrido.textContent=segundosParaMinutos( Math.floor(musica.currentTime));
-    //muda o conteudo do texto
+    
 
 }
 
 function segundosParaMinutos(segundos){
-        //olha o video pra entender
+       
     let campoMinutos = Math.floor(segundos / 60);
     let campoSegundos = segundos % 60;
 
@@ -174,7 +174,7 @@ volumeRange.addEventListener('input',function(e){
 
 },false);
 
-//evento pra quando o mouse passa por cima aparece o volume control
+
 volumeButton.addEventListener('mouseenter',function(){
     volumecontrol.style.margin= '0px 2px 0px 0px'
     volumepainel.style.width= '52px';
