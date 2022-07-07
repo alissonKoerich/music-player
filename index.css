@@ -2,10 +2,10 @@ body, html{
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /*deixa os elementos em coluna*/
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
-    height: 100vh;  /*define a altura 100% da pagina pra o justify-content centralizar*/
+    height: 100vh; 
     background-color:rgb(39, 39, 39);
     color:#ddd;
     font-family: 'Montserrat', sans-serif;
@@ -57,14 +57,14 @@ progress{
 .tempo{
     display: flex;
     width: 300px;
-    justify-content: space-between; /*distanceia o maximo q der dois elementos */
+    justify-content: space-between; 
 }
 
 .player{
     margin-left: 20px;
     width: 300px;
     display: flex;
-    justify-content: space-around;  /*separa so um pouco os elementos*/
+    justify-content: space-around;  
     align-items: center;
     margin-top: 10px;
     margin-right: 15px;
