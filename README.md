@@ -1,4 +1,4 @@
-🎵 <a href='https://alissonkoerich.github.io/music-player/' target='blank'> Music-player</a>
+🎵 <a href='https://alissonkoerich.github.io/music-player/' target='_blank'> Music-player</a>
  
 <img src='images/musicplayer.png'>
 
